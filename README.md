@@ -1,71 +1,80 @@
-# Getting Started with Create React App
+Swiggy UI Clone
+This project is a clone of the Swiggy user interface built using React. It uses a local API to fetch and display data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Responsive design
+Dynamic menu and restaurant listings
+Fixed header that changes style on scroll
+Interactive elements like signup and login buttons
+Technologies Used
+React
+CSS (TailwindCSS or plain CSS)
+Local JSON Server for API
+Getting Started
+Prerequisites
+Make sure you have the following installed on your machine:
 
-## Available Scripts
+Node.js (>= 14.x)
+npm (>= 6.x)
+Installation
+Clone the repository:
 
-In the project directory, you can run:
+sh
+Copy code
+git clone https://github.com/your-username/swiggy-ui-clone.git
+cd swiggy-ui-clone
+Install the dependencies:
 
-### `npm start`
+sh
+Copy code
+npm install
+Running the Local API
+We are using json-server to create a local API. Follow these steps to set it up:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install json-server globally if you haven't already:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+sh
+Copy code
+npm install -g json-server
+Create a db.json file in the project root with sample data:
 
-### `npm test`
+Api is given in swigyy-api folder in JSON format
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the JSON server:
 
-### `npm run build`
+sh
+Copy code
+json-server --watch db.json --port 5000
+The API will be available at http://localhost:5000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Running the React Project
+Start the React development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+sh
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Project Structure
+public/: Contains the public assets and the HTML file.
+src/: Contains the React components and styles.
+components/: Contains reusable React components.
+assets/: Contains images and other assets.
+App.js: Main application component.
+index.js: Entry point for the React application.
+db.json: Sample data for the local API.
+Usage
+The header will become fixed and change style when you scroll down.
+The menu and restaurant data are fetched from the local API.
+You can navigate between different sections using the navigation links.
 
-### `npm run eject`
+![Swiggy UI Clone Screenshot](./src/assets/images/swiggy1.JPG)
+![](./src/assets/images/swiggy2.JPG)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributing
+If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+License
+This project is licensed under the MIT License.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# swiggyui" 
